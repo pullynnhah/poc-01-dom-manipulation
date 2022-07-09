@@ -5,19 +5,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Title</title>
-
-    <!-- favicon -->
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <title>POC</title>
 
     <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arima:wght@700&display=swap"
+      rel="stylesheet" />
 
     <!-- stylesheets -->
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/media.css" />
   </head>
   <body>
+    <header>
+      <h1>POC - DOM Manipulation</h1>
+    </header>
+
+    <main>
+      <section>
+        <input type="text" id="name" class="name" placeholder="Enter your name here" />
+      </section>
+      <section class="btns">
+        <div>
+          <button onclick="createDisplayTag()">Create/Display</button>
+          <button onclick="showEvenNumbers()">Even</button>
+          <button onclick="showOddNumbers()">Odd</button>
+          <button onclick="reloadPage()">Reload</button>
+        </div>
+        <div>
+          <button onclick="showInnerHTML()">innerHTML</button>
+          <button onclick="showInnerText()">innerText</button>
+          <button onclick="showTextContent()">textContent</button>
+        </div>
+      </section>
+
+      <section class="worlds"></section>
+    </main>
     <!-- scripts -->
     <script src="scripts/script.js"></script>
   </body>
