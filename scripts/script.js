@@ -40,9 +40,9 @@ function showOddNumbers() {
 function reloadPage() {
   const input = document.getElementsByClassName("name").namedItem("name");
   if (input.value === "") {
-    alert(`Tchau, ${name}!`);
+    alert(`Bye, ${name}!`);
   } else {
-    alert(`Tchau, ${input.value}!`);
+    alert(`Bye, ${input.value}!`);
   }
   input.value = "";
   window.location.reload();
